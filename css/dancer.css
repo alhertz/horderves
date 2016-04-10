@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  background: url('../images/cover.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#static {
+  background: url('../images/static.gif');
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  opacity: .2;
+}
+
+canvas {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+}
+
+#loading {
+  color: #FFF;
+  height: 60px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -30px;
+  text-decoration: none;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase; 
+  letter-spacing: 4px;
+  font-size: 2.0em;
+  z-index: 999999;
+}
+
+#loading a {
+  height: 60px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -30px;
+  line-height: 60px;
+  color: #FFF;
+  border: 1px solid #FFF;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase; 
+}
+
+#loading img {
+  margin-top: -100px;
+}
+
+#loading a:hover {
+  border-color: #EEE;
+  color: #EEE;
+}
+
+#play, #pause {
+  display: none;
+}
+
+.controls {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  margin-right: 20px;
+  bottom: 0;
+  left: 0;
+  margin: 2.0em;
+  z-index: 9;
+  color: #999;
+  text-align: center;
+}
+
+.controls .button {
+  background: #FFF;
+  line-height: 40px;
+}
+
+.controls .button:hover {
+  cursor: pointer;
+  color: #CCC;
+}
+
+#waveform { 
+  display: block;
+  margin: 0 auto;
+}
+
+#info {
+  bottom: 0;
+  right: 0;
+  max-width: 400px;
+  position: absolute;
+  margin: 2.0em;
+  z-index: 9999;
+}
+
+#info span {
+  font-weight: normal;
+}
+
+#info span, #info h3 {
+  color: #FFF;
+  font-size: 12px;
+  margin: 5px 30px 5px 30px;
+  padding: 0;
+}
+
+#info a {
+  color: #CCC;
+  text-decoration: none;
+}
+
+#info a:hover {
+  color: #999;
+}

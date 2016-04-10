@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='css/dancer.css' rel='stylesheet' type='text/css'>
+		<title>Sharks' Teeth - In Front of a Plate of H'orderves</title>
+	</head>
+	<body>
+		<div id="static"></div>
+		<div id="loading"><img src="images/loading.gif"></div>
+
+		<div class="controls">
+			<div id="pause" class="button">Pause</div>
+			<div id="play" class="button">Play</div>
+		</div>
+
+		<canvas id="waveform" height="600" width="1024"></canvas>
+
+		<div id="info">
+			<span>NOTE</span>
+			<h3>The song wont be playable until it has loaded completely. It's about 15mb so it might take a bit.<br /><br/><a href="http://sharksteeth.bandcamp.com/track/in-front-of-a-plate-of-horderves">In Front of a Plate of H'orderves by Sharks' Teeth</a></h3>
+		</div>
+
+		<!--Jquery-->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!-- Dancer.js -->
+		<script src="js/dancer/dancer.js"></script>
+		<script src="js/dancer/src/support.js"></script>
+		<script src="js/dancer/src/kick.js"></script>
+		<script src="js/dancer/src/adapterWebAudio.js"></script>
+		<script src="js/dancer/src/adapterMoz.js"></script>
+		<script src="js/dancer/src/adapterFlash.js"></script>
+		<script src="js/dancer/lib/fft.js"></script>
+		<script src="js/dancer/lib/flash_detect.js"></script>
+		<script src="js/dancer/plugins/dancer.fft.js"></script>
+		<script src="js/dancer/plugins/dancer.waveform.js"></script>
+
+		<!-- App -->
+		<script src="js/player.js"></script>
+	</body>
+</html>
